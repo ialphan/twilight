@@ -1,0 +1,176 @@
+/* Elements */
+#elements-content.source-code{
+  background: #000 !important;
+  font-size: 12px !important;
+  font-family: 'Consolas for BBEdit' !important;
+}
+
+#elements-content .hovered{
+  background: rgba(239, 163, 19, 0.5) !important;
+}
+#elements-content .selected{
+  background: rgba(239, 163, 19, 0.5) !important;
+}
+
+#elements-content .highlight {}
+
+#elements-content .outline-disclosure li.parent::before, #elements-content .outline-disclosure ol:focus li.parent.expanded.selected::before{
+  background: none !important;
+  content: '' !important;
+}
+
+#elements-content .parent::before{
+  content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
+  position: relative;
+  z-index: 999;
+}
+
+#elements-content .parent.expanded::before{
+  content: url(chrome-devtools://devtools/Images/treeDownTriangleWhite.png) !important;
+}
+
+#elements-sidebar .styles-section .properties li.parent::before,
+#elements-sidebar .section > .header::before,
+#elements-sidebar .properties-tree li.parent::before,
+#elements-sidebar .event-bars .event-bar .header::before{
+  content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
+}
+
+#elements-sidebar .styles-section .properties li.parent.expanded::before,
+#elements-sidebar .section.expanded > .header::before,
+#elements-sidebar .properties-tree li.parent.expanded::before,
+#elements-sidebar .event-bars .event-bar.expanded .header::before{
+  content: url(chrome-devtools://devtools/Images/treeDownTriangleWhite.png) !important;
+}
+
+/*  Modified from: https://plus.google.com/115133653231679625609/posts/Ua8a7Nuk4pb */
+/*#-webkit-web-inspector .elements .source-code {
+  height: 40%;
+  left: auto;
+  right: auto;
+  width: 100% !important;
+}
+
+#-webkit-web-inspector .elements .split-view-sidebar-right {
+  left: auto;
+  right: auto;
+  width: 100% !important;
+}
+
+#-webkit-web-inspector .elements .split-view-contents {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  position: relative !important;
+}*/
+
+
+/* HTML */
+#elements-content .webkit-html-comment{
+  color: #5f5a60 !important;
+}
+
+#elements-content .webkit-html-doctype{
+  color: #5f5a60 !important;
+}
+
+#elements-content .webkit-html-tag{
+  color: #9b703f !important;
+}
+
+#elements-content .webkit-html-tag-name{}
+#elements-content .webkit-html-attribute{
+  color: #9b703f !important;
+}
+
+#elements-content .webkit-html-attribute-name{
+  color: #9b703f !important;
+}
+
+#elements-content .webkit-html-attribute-value{
+  color: #8f9d6a !important;
+  text-decoration: none;
+}
+
+#elements-content .webkit-html-external-link{}
+#elements-content .webkit-html-resource-link{}
+#elements-content .webkit-html-text-tag{}
+
+#elements-content .webkit-html-text-node{
+  color: #fff !important;
+}
+
+#elements-content .webkit-html-css-node{
+  color: #fff !important;
+}
+
+#elements-content .webkit-html-js-node{
+  color: #fff !important;
+}
+
+
+
+/* CSS */
+#elements-content .webkit-css-comment{
+  color: #5f5a60 !important;
+}
+
+#elements-content .webkit-css-url{
+  color: blue !important;
+}
+
+#elements-content .webkit-css-color{
+  color: #ca7840 !important;
+}
+
+#elements-content .webkit-css-selector{
+  color: #cda869 !important;
+}
+
+#elements-content .webkit-css-property{
+  color: #c5af75 !important;
+}
+
+#elements-content .webkit-css-at-rule{
+  color: #c5af75 !important;
+}
+
+#elements-content .webkit-css-number{
+  color: #ca7840 !important;
+}
+
+#elements-content .webkit-css-keyword{
+  color: #f9ee98 !important;
+}
+
+#elements-content .webkit-css-string{}
+
+#elements-content .webkit-css-important{
+  color: #cda869 !important;
+}
+
+
+
+/* JavaScript */
+#elements-content .webkit-javascript-comment{
+  color: #5f5a60 !important;
+}
+
+#elements-content .webkit-javascript-keyword{
+  color: #7587a6 !important;
+}
+
+#elements-content .webkit-javascript-ident{
+  color: #fff !important;
+}
+
+#elements-content .webkit-javascript-string{
+  color: #8f9d6a !important;
+}
+
+#elements-content .webkit-javascript-number{
+  color: #cf6a4c !important;
+}
+
+#elements-content .webkit-javascript-regexp{
+  color: #e9c062 !important;
+}
